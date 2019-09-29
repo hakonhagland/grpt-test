@@ -19,6 +19,7 @@ matrix:
   - perl: "5.28"
   - perl: "5.30"
 before_script:
+ - cpanm -n Test::Fatal
  - "git config --global user.email 'you@example.com'"
  - "git config --global user.name 'Your Name'"
 script: "prove -lr t/"
